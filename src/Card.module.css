@@ -1,0 +1,31 @@
+.card {
+  width: 387px;
+  height: 255px;
+  border: 1px solid rgba(171, 216, 196, 1);
+  background-color: #e4fbed;
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 0;
+  margin: 1rem;
+}
+
+.card img {
+  width: 82px;
+}
+
+.card h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 125%;
+  color: #193c3f;
+}
+
+.card p {
+  line-height: 140%;
+  text-align: center;
+  color: #193c3f;
+  width: 70%;
+}
