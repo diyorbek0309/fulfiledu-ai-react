@@ -1,19 +1,29 @@
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
-import Register from "./pages/Register";
-import Login from "./pages/Login";
-import Home from "./pages/Home";
-import StudentProfile from "./pages/StudentProfile";
+import { useState, useEffect } from "react";
 
 function App() {
+  let [count, setCount] = useState(1);
+
+  useEffect(() => {
+    console.log("useEffect ishladi");
+    if (count % 10 === 0) {
+      alert("Salom");
+    }
+  }, [count]);
+
+  setInterval(() => {
+    setCount(++count);
+  }, 1000);
+
   return (
     <div className="App">
-      <Routes path="/">
+      {/* <Routes path="/">
         <Route index element={<Home />} />
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
         <Route path="students/:studentID" element={<StudentProfile />} />
-      </Routes>
+      </Routes> */}
+      <h1>Hozirgi qiymat: {count}</h1>
     </div>
   );
 }

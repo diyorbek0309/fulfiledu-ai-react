@@ -11,9 +11,13 @@ const StudentProfile = () => {
         ? "Diyorbek"
         : studentID === "2"
         ? "Abbosbek"
-        : "Dilshodbek"}
+        : studentID === "3"
+        ? "Dilshodbek"
+        : "Bunday student yo'q!"}
     </div>
   );
 };
+
+// Conditional rendering
 
 export default StudentProfile;
